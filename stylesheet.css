@@ -15,7 +15,6 @@
   grid-template-areas:
   ". . . . nav"
   ". head head head ."
-  ". . . . box"
   "footer footer footer footer footer";
 }
 
@@ -31,18 +30,18 @@
 
 }
 
-.box{
+/*.box{
   grid-area: box;
   background-color: red;
   height: 300px;
-}
+}*/
 
 .footer{
   grid-area: footer;
 }
 
-/*.picture{
-  margin-left: 55%;*/
+.picture{
+  margin-left: 40%;
 
 }
 body{
