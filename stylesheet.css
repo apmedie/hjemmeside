@@ -11,12 +11,14 @@
   max-width: 1940px;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  ". . . . nav"
-  ". head head head ."
-  "footer footer footer footer footer";
+  ". . . . . . . . nav nav nav ."
+  ". . . . head head head head . . . ."
+  ". textbox textbox textbox textbox pic pic pic pic pic . ."
+  "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
+
 
 .main-head {
   grid-area: head;
@@ -24,11 +26,14 @@
   text-align: center;
 }
 
-
 .main-nav{
   grid-area: nav;
 
 }
+
+/*li a:hover{
+  background-color: red;
+}*/
 
 /*.box{
   grid-area: box;
@@ -36,14 +41,29 @@
   height: 300px;
 }*/
 
+.textbox{
+  grid-area: textbox;
+  background-color: yellow;
+  height: 200px;
+  margin-top: 200px;
+}
+
 .footer{
   grid-area: footer;
+  background-color: blue;
+  border: 2px solid: black;
+  height: 50px;
+  text-align: center;
 }
 
 .picture{
-  margin-left: 40%;
-
+  grid-area: pic;
 }
+
+.profil{
+  width: 100%;
+}
+
 body{
   background-color: azure;
 }
