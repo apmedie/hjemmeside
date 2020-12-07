@@ -6,15 +6,16 @@
   grid-gap: 20px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "logorund . . . . . . . . nav nav nav"
-  ". . . head head head head head head . . ."
+  ". . . . . . . . . nav nav nav"
+  "logorund . . head head head head head head . . ."
   ". textbox textbox textbox textbox textbox pic pic pic pic pic ."
+  ". textbox2 textbox2 textbox2 textbox2 textbox2 . . . . . ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
 
 .main-head {
   grid-area: head;
-  font-size: 50px;
+  font-size: 65px;
   text-align: center;
   margin-top: auto;
 }
@@ -37,6 +38,16 @@
   grid-area: textbox;
   background-color: yellow;
   height: 300px;
+  margin-top: 30px;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.textbox2{
+  grid-area: textbox2;
+  background-color: yellow;
+  height: 300px;
+  margin-top: -350px;
 }
 
 .footer{
@@ -66,4 +77,54 @@ nav ul {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+}
+
+.box{
+  max-width: 1940px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . . . . . . . . nav nav nav"
+  "logorund . . head head head head head head . . ."
+  ". . pro1 pro1 pro1 pro1 pro2 pro2 pro2 pro2 . ."
+  ". . pro3 pro3 pro3 pro3 pro4 pro4 pro4 pro4 . ."
+  ". . pro5 pro5 pro5 pro5 pro6 pro6 pro6 pro6 . ."
+  "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.projekt1{
+  grid-area: pro1;
+  background-color: yellow;
+  height: 300px;
+}
+
+.projekt2{
+  grid-area: pro2;
+  background-color: red;
+  height: 300px;
+}
+
+.projekt3{
+  grid-area: pro3;
+  background-color: blue;
+  height: 300px;
+}
+
+.projekt4{
+  grid-area: pro4;
+  background-color: orange;
+  height: 300px;
+}
+
+.projekt5{
+  grid-area: pro5;
+  background-color: lightgreen;
+  height: 300px;
+}
+
+.projekt6{
+  grid-area: pro6;
+  background-color: lightyellow;
+  height: 300px;
 }
