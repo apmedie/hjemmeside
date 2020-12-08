@@ -1,5 +1,36 @@
 * {box-sizing: border-box;}
 
+@media (min-width: 414px){
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-row: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "nav"
+  "head"
+  "textbox"
+  "pic"
+  "logorund"
+  "footer";
+  }
+}
+
+@media (min-width: 828px){
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . . nav nav"
+  "head head head head head"
+  ". . logorund . ."
+  "textbox textbox pic pic pic"
+  "footer footer footer footer footer";
+  }
+}
+
+@media (min-width: 1024px){
 .wrapper{
   max-width: 1940px;
   display: grid;
@@ -7,23 +38,24 @@
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
   ". . . . . . . . . nav nav nav"
-  "logorund . . head head head head head head . . ."
-  ". textbox textbox textbox textbox textbox pic pic pic pic pic ."
-  ". textbox2 textbox2 textbox2 textbox2 textbox2 . . . . . ."
+  "logorund . head head head head head head head head . ."
+  ". . textbox textbox textbox textbox pic pic pic pic pic ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
 }
-
 .main-head {
   grid-area: head;
-  font-size: 65px;
+  font-size: 60px;
   text-align: center;
   margin-top: auto;
+  font-family: 'Courier New', monospace;
 }
 
 .main-nav{
   grid-area: nav;
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
+  font-family: 'Courier New', monospace;
 }
 
 .logorund{
@@ -36,24 +68,16 @@
 
 .textbox{
   grid-area: textbox;
-  background-color: yellow;
-  height: 300px;
-  margin-top: 30px;
-  font-size: 40px;
-  padding: 10px;
-}
-
-.textbox2{
-  grid-area: textbox2;
-  background-color: yellow;
-  height: 300px;
-  margin-top: -350px;
+  height: 100%;
+  font-size: 30px;
+  padding: 20px;
+  border: 5px solid black;
 }
 
 .footer{
   grid-area: footer;
   background-color: blue;
-  border: 2px solid: black;
+  border: 2px solid black;
   height: 50px;
   text-align: center;
 }
@@ -67,7 +91,7 @@
 }
 
 body{
-  background-color: azure;
+  background-color: white;
 }
 
 nav ul {
@@ -79,6 +103,47 @@ nav ul {
     flex-direction: row;
 }
 
+@media (min-width: 414px){
+.box {
+  display: grid;
+  grid-gap: 20px;
+  grid-row: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "nav"
+  "head"
+  "pro1"
+  "pro2"
+  "pro3"
+  "pro4"
+  "pro5"
+  "pro6"
+  "logorund"
+  "footer";
+  }
+}
+
+
+@media (min-width: 828px){
+.box {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . . nav nav"
+  "head head head head head"
+  ". pro1 pro1 pro1 ."
+  ". pro2 pro2 pro2 ."
+  ". pro3 pro3 pro3 ."
+  ". pro4 pro4 pro4 ."
+  ". pro5 pro5 pro5 ."
+  ". pro6 pro6 pro6 ."
+  ". . logorund . ."
+  "footer footer footer footer footer";
+  }
+}
+
+@media (min-width: 1024px){
 .box{
   max-width: 1940px;
   display: grid;
@@ -86,17 +151,20 @@ nav ul {
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
   ". . . . . . . . . nav nav nav"
-  "logorund . . head head head head head head . . ."
+  "logorund . head head head head head head head head . ."
   ". . pro1 pro1 pro1 pro1 pro2 pro2 pro2 pro2 . ."
   ". . pro3 pro3 pro3 pro3 pro4 pro4 pro4 pro4 . ."
   ". . pro5 pro5 pro5 pro5 pro6 pro6 pro6 pro6 . ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
 }
 
 .projekt1{
   grid-area: pro1;
-  background-color: yellow;
-  height: 300px;
+}
+
+.projekt_1{
+  width: 100%;
 }
 
 .projekt2{
