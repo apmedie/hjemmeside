@@ -4,7 +4,6 @@
 .wrapper {
   display: grid;
   grid-gap: 20px;
-  grid-row: 20px;
   grid-template-columns: 1fr;
   grid-template-areas:
   "nav"
@@ -48,7 +47,7 @@
 }
 .main-head {
   grid-area: head;
-  font-size: 4vw;
+  font-size: 60px;
   text-align: center;
   margin-top: auto;
   font-family: 'Courier New', monospace;
@@ -117,7 +116,6 @@ nav ul {
 .wrapper2 {
   display: grid;
   grid-gap: 20px;
-  grid-row: 20px;
   grid-template-columns: 1fr;
   grid-template-areas:
   "nav"
@@ -214,7 +212,6 @@ a{
 
 .img_descripition1{
   font-size: 30px;
-  text-decoration: none;
   color: white;
   text-align: center;
 }
@@ -252,10 +249,14 @@ a{
 .img_title2{
   font-size: 40px;
   font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .img_descripition2{
   font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 .projekt3{
@@ -291,10 +292,14 @@ a{
 .img_title3{
   font-size: 40px;
   font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .img_descripition3{
   font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 .projekt4{
@@ -330,10 +335,14 @@ a{
 .img_title4{
   font-size: 40px;
   font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .img_descripition4{
   font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 .projekt5{
@@ -369,10 +378,14 @@ a{
 .img_title5{
   font-size: 40px;
   font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .img_descripition5{
   font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 .projekt6{
@@ -408,15 +421,19 @@ a{
 .img_title6{
   font-size: 40px;
   font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .img_descripition6{
   font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 
 @media (min-width: 1024px){
-.wrapper3{
+.wrapper3-p1{
   max-width: 1940px;
   display: grid;
   grid-gap: 20px;
@@ -429,7 +446,75 @@ a{
   }
 }
 
+@media (min-width: 1024px){
+.wrapper3-p2{
+  max-width: 1940px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "logorund . . . . . . . . nav nav nav"
+  "logorund . head head head head head head head head . ."
+  "hr hr hr hr hr hr hr hr hr hr hr hr"
+  "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+}
 
+@media (min-width: 1024px){
+.wrapper3-p3{
+  max-width: 1940px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "logorund . . . . . . . . nav nav nav"
+  "logorund . head head head head head head head head . ."
+  "hr hr hr hr hr hr hr hr hr hr hr hr"
+  "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
+@media (min-width: 1024px){
+.wrapper3-p4{
+  max-width: 1940px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "logorund . . . . . . . . nav nav nav"
+  "logorund . head head head head head head head head . ."
+  "hr hr hr hr hr hr hr hr hr hr hr hr"
+  "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
+@media (min-width: 1024px){
+.wrapper3-p5{
+  max-width: 1940px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "logorund . . . . . . . . nav nav nav"
+  "logorund . head head head head head head head head . ."
+  "hr hr hr hr hr hr hr hr hr hr hr hr"
+  "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
+@media (min-width: 1024px){
+.wrapper3-p6{
+  max-width: 1940px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "logorund . . . . . . . . nav nav nav"
+  "logorund . head head head head head head head head . ."
+  "hr hr hr hr hr hr hr hr hr hr hr hr"
+  "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+}
 
 /*https://www.youtube.com/watch?v=exb2ab72Xhs
 projekt billeder 400px x 300px*/
