@@ -102,7 +102,8 @@ hr{
 .footer{
   grid-area: footer;
   border-top: 3px solid black;
-  height: 50px;
+	font-size: 20px;
+  font-family: Georgia, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -447,9 +448,46 @@ a{
   text-align: center;
 }
 
+@media (min-width: 414px){
+.wrapper3-p1 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "nav"
+  "pro1-heading"
+  "hr"
+  "pro1-text1"
+  "før-text"
+  "før"
+  "efter-text"
+  "efter"
+  "pro1-text2"
+  "logorund"
+  "footer";
+  }
+}
+
+@media (min-width: 828px){
+.wrapper3-p1 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . . nav nav"
+  "pro1-heading pro1-heading pro1-heading pro1-heading pro1-heading"
+  "hr hr hr hr hr"
+	"pro1-text1 pro1-text1 pro1-text1 pro1-text1 pro1-text1"
+  "før-text før-text . efter-text efter-text"
+	"før før . efter efter"
+	"pro1-text2 pro1-text2 pro1-text2 pro1-text2 pro1-text2"
+  ". . logorund . ."
+  "footer footer footer footer footer";
+  }
+}
 
 @media (min-width: 1024px){
-.wrapper3-p1{
+.wrapper3-p1 {
   max-width: 1940px;
   display: grid;
   grid-gap: 20px;
@@ -482,7 +520,6 @@ a{
 
 .pro1-text2{
 	grid-area: pro1-text2;
-	/*border: 3px solid black;*/
 	font-family: Tahoma, Verdana, sans-serif;
 	font-size: 25px;
 }
@@ -517,6 +554,39 @@ a{
 	width: 100%;
 }
 
+@media (min-width: 414px){
+.wrapper3-p2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "nav"
+  "pro2-heading"
+  "hr"
+  "pro2-text1"
+  "tegnet"
+  "printet"
+  "logorund"
+  "footer";
+  }
+}
+
+@media (min-width: 828px){
+.wrapper3-p2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . . nav nav"
+  "pro2-heading pro2-heading pro2-heading pro2-heading pro2-heading"
+  "hr hr hr hr hr"
+	"pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1"
+  "tegnet tegnet . printet printet"
+  ". . logorund . ."
+  "footer footer footer footer footer";
+  }
+}
+
 @media (min-width: 1024px){
 .wrapper3-p2{
   max-width: 1940px;
@@ -525,9 +595,72 @@ a{
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "logorund . . . . . . . . nav nav nav"
-  "logorund . head head head head head head head head . ."
+  "logorund . pro2-heading pro2-heading pro2-heading pro2-heading pro2-heading pro2-heading pro2-heading pro2-heading . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
+	". pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 ."
+	". . tegnet tegnet tegnet . . printet printet printet . ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
+.pro2-heading {
+	grid-area: pro2-heading;
+	font-size: 60px;
+  text-align: center;
+  font-family: Georgia, Verdana, sans-serif;
+}
+
+.pro2-text1{
+	grid-area: pro2-text1;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 25px;
+}
+
+.ålegræs-tegnet {
+	grid-area: tegnet;
+}
+
+.tegnet {
+	width: 100%;
+}
+
+.ålegræs3d {
+	grid-area: printet;
+}
+
+.printet {
+	width: 100%;
+}
+
+@media (min-width: 414px){
+.wrapper3-p3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "nav"
+  "pro3-heading"
+  "hr"
+  "pro3-text1"
+  "selvportræt"
+  "logorund"
+  "footer";
+  }
+}
+
+@media (min-width: 828px){
+.wrapper3-p3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . . nav nav"
+  "pro3-heading pro3-heading pro3-heading pro3-heading pro3-heading"
+  "hr hr hr hr hr"
+	"pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1"
+  ". selvportræt selvportræt selvportræt ."
+  ". . logorund . ."
+  "footer footer footer footer footer";
   }
 }
 
@@ -539,10 +672,33 @@ a{
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "logorund . . . . . . . . nav nav nav"
-  "logorund . head head head head head head head head . ."
+  "logorund . pro3-heading pro3-heading pro3-heading pro3-heading pro3-heading pro3-heading pro3-heading pro3-heading . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
+	". pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 ."
+	". . . selvportræt selvportræt selvportræt selvportræt selvportræt selvportræt . . ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
+}
+
+.pro3-heading {
+	grid-area: pro3-heading;
+	font-size: 60px;
+  text-align: center;
+  font-family: Georgia, Verdana, sans-serif;
+}
+
+.pro3-text1{
+	grid-area: pro3-text1;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 25px;
+}
+
+.pentool {
+	grid-area: selvportræt;
+}
+
+.selvportræt {
+	width: 100%;
 }
 
 @media (min-width: 1024px){
