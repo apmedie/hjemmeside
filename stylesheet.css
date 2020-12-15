@@ -1,20 +1,21 @@
 * {box-sizing: border-box;}
 
+
 .animation {
 	background: url(animation4.png) 0 0 no-repeat;
 	width: 500px;
     height: 500px;
-    animation: play 1.2s steps(29);
-    animation-iteration-count: 1;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-
+    animation: play 1.2s steps(29) infinite alternate;
+  margin-top: 2%;
 }
 
 @keyframes play {
     0% {background-position: 0px; }
     100% {background-position: -14500px;}
+}
+
+.fortsæt {
+	margin-left: auto;
 }
 
 @media (min-width: 414px){
@@ -62,6 +63,7 @@
   "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 }
+
 .main-head {
   grid-area: head;
   font-size: 60px;
@@ -701,6 +703,38 @@ a{
 	width: 100%;
 }
 
+@media (min-width: 414px){
+.wrapper3-p4 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "nav"
+  "pro4-heading"
+  "hr"
+  "pro4-text1"
+  "pro-animation"
+  "logorund"
+  "footer";
+  }
+}
+
+@media (min-width: 828px){
+.wrapper3-p4 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . . nav nav"
+  "pro4-heading pro4-heading pro4-heading pro4-heading pro4-heading"
+  "hr hr hr hr hr"
+	"pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1"
+  ". pro-animation pro-animation pro-animation ."
+  ". . logorund . ."
+  "footer footer footer footer footer";
+  }
+}
+
 @media (min-width: 1024px){
 .wrapper3-p4{
   max-width: 1940px;
@@ -709,9 +743,64 @@ a{
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "logorund . . . . . . . . nav nav nav"
-  "logorund . head head head head head head head head . ."
-  "hr hr hr hr hr hr hr hr hr hr hr hr"
+  "logorund . pro4-heading pro4-heading pro4-heading pro4-heading pro4-heading pro4-heading pro4-heading pro4-heading . ."
+	"hr hr hr hr hr hr hr hr hr hr hr hr"
+	". pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 ."
+	". . . . pro-animation pro-animation . . . . . ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
+.pro4-heading {
+	grid-area: pro4-heading;
+	font-size: 60px;
+  text-align: center;
+  font-family: Georgia, Verdana, sans-serif;
+}
+
+.pro4-text1{
+	grid-area: pro4-text1;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 25px;
+}
+
+.pro-animation {
+	background: url(animation4.png) 0 0 no-repeat;
+	width: 500px;
+  height: 500px;
+    animation: play 1.5s steps(29) infinite alternate;
+	grid-area: pro-animation;
+}
+
+@media (min-width: 414px){
+.wrapper3-p5 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "nav"
+  "pro5-heading"
+  "hr"
+  "pro5-text1"
+  "kaktus"
+  "logorund"
+  "footer";
+  }
+}
+
+@media (min-width: 828px){
+.wrapper3-p5 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . . nav nav"
+  "pro5-heading pro5-heading pro5-heading pro5-heading pro5-heading"
+  "hr hr hr hr hr"
+	"pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1"
+  ". kaktus kaktus kaktus ."
+  ". . logorund . ."
+  "footer footer footer footer footer";
   }
 }
 
@@ -723,9 +812,70 @@ a{
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "logorund . . . . . . . . nav nav nav"
-  "logorund . head head head head head head head head . ."
+  "logorund . pro5-heading pro5-heading pro5-heading pro5-heading pro5-heading pro5-heading pro5-heading pro5-heading . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
+	". pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 ."
+	". . . . kaktus kaktus kaktus kaktus . . . ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
+.pro5-heading {
+	grid-area: pro5-heading;
+	font-size: 60px;
+  text-align: center;
+  font-family: Georgia, Verdana, sans-serif;
+}
+
+.pro5-text1 {
+	grid-area: pro5-text1;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 25px;
+}
+
+.kaktus {
+	grid-area: kaktus;
+}
+
+.mønster {
+	width: 100%;
+}
+
+@media (min-width: 414px){
+.wrapper3-p6 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "nav"
+  "pro6-heading"
+  "hr"
+  "pro6-text1"
+  "kendama"
+	"kenudenfor"
+	"landskab"
+	"portrætudenfor"
+  "logorund"
+  "footer";
+  }
+}
+
+@media (min-width: 828px){
+.wrapper3-p6 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . . nav nav"
+  "pro6-heading pro6-heading pro6-heading pro6-heading pro6-heading"
+  "hr hr hr hr hr"
+	"pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1"
+  ". kendama kendama kendama ."
+	". kenudenfor kenudenfor kenudenfor ."
+	". landskab landskab landskab ."
+	". portrætudenfor portrætudenfor portrætudenfor ."
+  ". . logorund . ."
+  "footer footer footer footer footer";
   }
 }
 
@@ -737,10 +887,60 @@ a{
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "logorund . . . . . . . . nav nav nav"
-  "logorund . head head head head head head head head . ."
+  "logorund . pro6-heading pro6-heading pro6-heading pro6-heading pro6-heading pro6-heading pro6-heading pro6-heading . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
+	". pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 ."
+	". . . kendama kendama kendama kendama kendama kendama . . ."
+	". . . kenudenfor kenudenfor kenudenfor kenudenfor kenudenfor kenudenfor . . ."
+	". . . landskab landskab landskab landskab landskab landskab . . ."
+	". . . portrætudenfor portrætudenfor portrætudenfor portrætudenfor portrætudenfor portrætudenfor . . ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
+}
+
+.pro6-heading {
+	grid-area: pro6-heading;
+	font-size: 60px;
+  text-align: center;
+  font-family: Georgia, Verdana, sans-serif;
+}
+
+.pro6-text1 {
+	grid-area: pro6-text1;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 25px;
+}
+
+.kendama {
+	grid-area: kendama;
+}
+
+.kendamaprodukt {
+	width: 100%;
+}
+
+.kendamaudenfor {
+	grid-area: kenudenfor;
+}
+
+.udenfor {
+	width: 100%;
+}
+
+.landskabsbillede{
+	grid-area: landskab;
+}
+
+.landskab {
+	width: 100%;
+}
+
+.Portræt-udenfor {
+	grid-area: portrætudenfor;
+}
+
+.udendørsportræt {
+	width: 100%;
 }
 
 /*https://www.youtube.com/watch?v=exb2ab72Xhs
