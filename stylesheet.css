@@ -628,6 +628,7 @@ a{
   "hr"
   "pro3-text1"
   "selvportrat"
+  "antonbillede"
   "logorund"
   "footer";
   }
@@ -644,6 +645,7 @@ a{
   "hr hr hr hr hr"
 	"pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1"
   ". selvportrat selvportrat selvportrat ."
+  ". antonbillede antonbillede antonbillede ."
   ". . logorund . ."
   "footer footer footer footer footer";
   }
@@ -661,6 +663,7 @@ a{
   "hr hr hr hr hr hr hr hr hr hr hr hr"
 	". pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 ."
 	". . . selvportrat selvportrat selvportrat selvportrat selvportrat selvportrat . . ."
+  ". . . antonbillede antonbillede antonbillede antonbillede antonbillede antonbillede . . ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 }
@@ -684,6 +687,14 @@ a{
 
 .selvportrat {
 	width: 100%;
+}
+
+.antonbillede {
+  grid-area: antonbillede;
+}
+
+.antonpen {
+  width: 100%;
 }
 
 @media (min-width: 414px){
