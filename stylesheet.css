@@ -1,23 +1,5 @@
 * {box-sizing: border-box;}
 
-
-.animation {
-	background: url(animation4.png) 0 0 no-repeat;
-	width: 500px;
-    height: 500px;
-    animation: play 1.2s steps(29) infinite alternate;
-  margin-top: 2%;
-}
-
-@keyframes play {
-    0% {background-position: 0px; }
-    100% {background-position: -14500px;}
-}
-
-.fortsæt {
-	margin-left: auto;
-}
-
 @media (min-width: 414px){
 .wrapper {
   display: grid;
@@ -56,7 +38,7 @@
   grid-gap: 20px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "logorund . . . . . . . . nav nav nav"
+  "logorund . . . . . . . . . nav nav"
   "logorund . head head head head head head head head . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
   ". . textbox textbox textbox textbox pic pic pic pic pic ."
@@ -179,7 +161,7 @@ nav ul {
   grid-gap: 20px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "logorund . . . . . . . . nav nav nav"
+  "logorund . . . . . . . . . nav nav"
   "logorund . head head head head head head head head . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
   ". . pro1 pro1 pro1 pro1 pro2 pro2 pro2 pro2 . ."
@@ -264,6 +246,7 @@ a{
 .overlay2:hover {
   opacity: 1;
 }
+
 
 .img_title2{
   font-size: 40px;
@@ -460,8 +443,8 @@ a{
   "pro1-heading"
   "hr"
   "pro1-text1"
-  "før-text"
-  "før"
+  "for-text"
+  "for"
   "efter-text"
   "efter"
   "pro1-text2"
@@ -480,8 +463,8 @@ a{
   "pro1-heading pro1-heading pro1-heading pro1-heading pro1-heading"
   "hr hr hr hr hr"
 	"pro1-text1 pro1-text1 pro1-text1 pro1-text1 pro1-text1"
-  "før-text før-text . efter-text efter-text"
-	"før før . efter efter"
+  "for-text for-text . efter-text efter-text"
+	"for for . efter efter"
 	"pro1-text2 pro1-text2 pro1-text2 pro1-text2 pro1-text2"
   ". . logorund . ."
   "footer footer footer footer footer";
@@ -495,12 +478,12 @@ a{
   grid-gap: 20px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "logorund . . . . . . . . nav nav nav"
+  "logorund . . . . . . . . . nav nav"
   "logorund . pro1-heading pro1-heading pro1-heading pro1-heading pro1-heading pro1-heading pro1-heading pro1-heading . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
 	". pro1-text1 pro1-text1 pro1-text1 pro1-text1 pro1-text1 pro1-text1 pro1-text1 pro1-text1 pro1-text1 pro1-text1 ."
-	". . . før-text . . . . efter-text . . ."
-	". før før før før før efter efter efter efter efter ."
+	". . . for-text . . . . efter-text . . ."
+	". for for for for for efter efter efter efter efter ."
 	". pro1-text2 pro1-text2 pro1-text2 pro1-text2 pro1-text2 pro1-text2 pro1-text2 pro1-text2 pro1-text2 pro1-text2 ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
@@ -526,8 +509,8 @@ a{
 	font-size: 25px;
 }
 
-.før-text {
-	grid-area: før-text;
+.for-text {
+	grid-area: for-text;
 	text-align: center;
 	font-family: Georgia, Verdana, sans-serif;
 	font-size: 30px;
@@ -540,11 +523,11 @@ a{
 	font-size: 30px;
 }
 
-.før {
-	grid-area: før;
+.for {
+	grid-area: for;
 }
 
-.ringstedfør {
+.ringstedfor {
 	width: 100%;
 }
 
@@ -596,7 +579,7 @@ a{
   grid-gap: 20px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "logorund . . . . . . . . nav nav nav"
+  "logorund . . . . . . . . . nav nav"
   "logorund . pro2-heading pro2-heading pro2-heading pro2-heading pro2-heading pro2-heading pro2-heading pro2-heading . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
 	". pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 pro2-text1 ."
@@ -618,7 +601,7 @@ a{
 	font-size: 25px;
 }
 
-.ålegræs-tegnet {
+.alegras-tegnet {
 	grid-area: tegnet;
 }
 
@@ -626,7 +609,7 @@ a{
 	width: 100%;
 }
 
-.ålegræs3d {
+.alegras3d {
 	grid-area: printet;
 }
 
@@ -644,7 +627,7 @@ a{
   "pro3-heading"
   "hr"
   "pro3-text1"
-  "selvportræt"
+  "selvportrat"
   "logorund"
   "footer";
   }
@@ -660,7 +643,7 @@ a{
   "pro3-heading pro3-heading pro3-heading pro3-heading pro3-heading"
   "hr hr hr hr hr"
 	"pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1"
-  ". selvportræt selvportræt selvportræt ."
+  ". selvportrat selvportrat selvportrat ."
   ". . logorund . ."
   "footer footer footer footer footer";
   }
@@ -673,11 +656,11 @@ a{
   grid-gap: 20px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "logorund . . . . . . . . nav nav nav"
+  "logorund . . . . . . . . . nav nav"
   "logorund . pro3-heading pro3-heading pro3-heading pro3-heading pro3-heading pro3-heading pro3-heading pro3-heading . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
 	". pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 pro3-text1 ."
-	". . . selvportræt selvportræt selvportræt selvportræt selvportræt selvportræt . . ."
+	". . . selvportrat selvportrat selvportrat selvportrat selvportrat selvportrat . . ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 }
@@ -696,10 +679,10 @@ a{
 }
 
 .pentool {
-	grid-area: selvportræt;
+	grid-area: selvportrat;
 }
 
-.selvportræt {
+.selvportrat {
 	width: 100%;
 }
 
@@ -742,7 +725,7 @@ a{
   grid-gap: 20px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "logorund . . . . . . . . nav nav nav"
+  "logorund . . . . . . . . . nav nav"
   "logorund . pro4-heading pro4-heading pro4-heading pro4-heading pro4-heading pro4-heading pro4-heading pro4-heading . ."
 	"hr hr hr hr hr hr hr hr hr hr hr hr"
 	". pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 pro4-text1 ."
@@ -770,6 +753,11 @@ a{
   height: 500px;
     animation: play 1.5s steps(29) infinite alternate;
 	grid-area: pro-animation;
+}
+
+@keyframes play {
+    0% {background-position: 0px; }
+    100% {background-position: -14500px;}
 }
 
 @media (min-width: 414px){
@@ -811,7 +799,7 @@ a{
   grid-gap: 20px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "logorund . . . . . . . . nav nav nav"
+  "logorund . . . . . . . . . nav nav"
   "logorund . pro5-heading pro5-heading pro5-heading pro5-heading pro5-heading pro5-heading pro5-heading pro5-heading . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
 	". pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 pro5-text1 ."
@@ -837,7 +825,7 @@ a{
 	grid-area: kaktus;
 }
 
-.mønster {
+.monster {
 	width: 100%;
 }
 
@@ -854,7 +842,7 @@ a{
   "kendama"
 	"kenudenfor"
 	"landskab"
-	"portrætudenfor"
+	"portratudenfor"
   "logorund"
   "footer";
   }
@@ -873,7 +861,7 @@ a{
   ". kendama kendama kendama ."
 	". kenudenfor kenudenfor kenudenfor ."
 	". landskab landskab landskab ."
-	". portrætudenfor portrætudenfor portrætudenfor ."
+	". portratudenfor portratudenfor portratudenfor ."
   ". . logorund . ."
   "footer footer footer footer footer";
   }
@@ -886,14 +874,14 @@ a{
   grid-gap: 20px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "logorund . . . . . . . . nav nav nav"
+  "logorund . . . . . . . . . nav nav"
   "logorund . pro6-heading pro6-heading pro6-heading pro6-heading pro6-heading pro6-heading pro6-heading pro6-heading . ."
   "hr hr hr hr hr hr hr hr hr hr hr hr"
 	". pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 pro6-text1 ."
 	". . . kendama kendama kendama kendama kendama kendama . . ."
 	". . . kenudenfor kenudenfor kenudenfor kenudenfor kenudenfor kenudenfor . . ."
 	". . . landskab landskab landskab landskab landskab landskab . . ."
-	". . . portrætudenfor portrætudenfor portrætudenfor portrætudenfor portrætudenfor portrætudenfor . . ."
+	". . . portratudenfor portratudenfor portratudenfor portratudenfor portratudenfor portratudenfor . . ."
   "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 }
@@ -935,11 +923,11 @@ a{
 	width: 100%;
 }
 
-.Portræt-udenfor {
-	grid-area: portrætudenfor;
+.Portrat-udenfor {
+	grid-area: portratudenfor;
 }
 
-.udendørsportræt {
+.udendorsportrat {
 	width: 100%;
 }
 
